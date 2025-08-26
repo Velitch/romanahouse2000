@@ -682,8 +682,9 @@ body {
 a {
   transition: color 0.6s;
 }
+
 .cid-uV09qgbe8g {
-  background-color: #bed3f9;
+  background-image: url("../../../assets/images/background.jpg");
 }
 .cid-uV09qgbe8g .row {
   flex-direction: row-reverse;
