@@ -1336,12 +1336,12 @@ a {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(
+/*  background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0.55) 0%,
     rgba(0, 0, 0, 0.35) 40%,
     rgba(0, 0, 0, 0.15) 100%
-  );
+  );*/
 }
 
 /* Contenuto */
