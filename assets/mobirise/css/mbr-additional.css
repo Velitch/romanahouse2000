@@ -1312,7 +1312,7 @@ a {
 :root {
   --brand-red: #ff5a4d;
   --text-light: #ffffff;
-  --overlay-dark: rgba(15, 15, 20, 0.55);
+  --overlay-dark: rgba(15, 15, 20, 0.1);
 }
 
 /* ====== HERO ====== */
