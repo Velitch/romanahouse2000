@@ -1323,7 +1323,7 @@ a {
   align-items: center;
   justify-content: flex-start;
   padding: clamp(56px, 7vw, 120px) 5%;
-  background-image: url("../img/hero-texture.jpg");
+  background-image: url("../img/hero-texture.jpg ");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1341,7 +1341,7 @@ a {
     90deg,
     rgba(0, 0, 0, 0.55) 0%,
     rgba(0, 0, 0, 0.35) 40%,
-    rgba(0, 0, 0, 0.15) 100%
+    rgba(0, 0, 0, 0.15) 10%
   );
 }
 
