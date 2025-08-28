@@ -102,7 +102,7 @@ body {
   background-color: #40b0bf !important;
 }
 .bg-info {
-  background-color: #47b5ed !important;
+  background-color: #f8bb25 !important;
 }
 .bg-warning {
   background-color: #ffe161 !important;
@@ -1390,7 +1390,7 @@ a {
   border-radius: 12px;
   padding: 14px 22px;
   box-shadow: 0 8px 18px rgba(255, 90, 77, 0.38);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
   text-decoration: none;
 }
 .btn-primary:hover {
