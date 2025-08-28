@@ -1332,7 +1332,6 @@ a {
 
 /* Overlay per rendere leggibile il testo */
 .hero::before {
-  background-image: url("../img/hero-texture.webp");
   content: "";
   position: absolute;
   inset: 0;
