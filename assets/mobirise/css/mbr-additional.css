@@ -1596,62 +1596,60 @@ a {
   position: absolute;
   inset: 0;
   pointer-events: none;
-
-  }
-
-  /* Contenuto */
-  .hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 700px;
 }
-    /* riflesso diagonale delicato (opzionale) */
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      z-index: 1;
-      background:
-        linear-gradient(120deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, 0) 30% 70%, rgba(0, 0, 0, .10));
-      mix-blend-mode: soft-light;
-    }
-  }
 
-  /* Card morbida dietro al testo */
-  .hero-card {
-    border-radius: 16px;
-    padding: clamp(18px, 3vw, 28px) clamp(20px, 3.5vw, 36px);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    /* rete a maglia fine */
-    background:
-      /* trama griglia (orizzontale) */
-      repeating-linear-gradient(0deg,
-        rgba(210, 210, 210, .35) 0px,
-        rgba(210, 210, 210, .35) 1px,
-        rgba(0, 0, 0, 0) 10px),
-      /* trama griglia (verticale) */
-      repeating-linear-gradient(90deg,
-        rgba(210, 210, 210, .35) 0px,
-        rgba(210, 210, 210, .35) 1px,
-        rgba(0, 0, 0, 0) 10px),
-      /* tinta rame/ottone molto leggera */
-      linear-gradient(135deg, rgba(190, 120, 60, .18), rgba(190, 120, 60, .10) 60%, rgba(255, 255, 255, .06));
-    /* miscelazione per look metallico */
-    mix-blend-mode: overlay;
-  }
+/* Contenuto */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
 
-  /* riflesso diagonale delicato (opzionale) 
+/* riflesso diagonale delicato (opzionale) */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, 0) 30% 70%, rgba(0, 0, 0, .10));
+  mix-blend-mode: soft-light;
+}
+
+/* Card morbida dietro al testo */
+.hero-card {
+  border-radius: 16px;
+  padding: clamp(18px, 3vw, 28px) clamp(20px, 3.5vw, 36px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  /* rete a maglia fine */
+  background:
+    /* trama griglia (orizzontale) */
+    repeating-linear-gradient(0deg,
+      rgba(210, 210, 210, .35) 0px,
+      rgba(210, 210, 210, .35) 1px,
+      rgba(0, 0, 0, 0) 10px),
+    /* trama griglia (verticale) */
+    repeating-linear-gradient(90deg,
+      rgba(210, 210, 210, .35) 0px,
+      rgba(210, 210, 210, .35) 1px,
+      rgba(0, 0, 0, 0) 10px),
+    /* tinta rame/ottone molto leggera */
+    linear-gradient(135deg, rgba(190, 120, 60, .18), rgba(190, 120, 60, .10) 60%, rgba(255, 255, 255, .06));
+  /* miscelazione per look metallico */
+  mix-blend-mode: overlay;
+}
+
+/* riflesso diagonale delicato (opzionale)*/
   .hero::after{
     content:"";
     position:absolute; inset:0; pointer-events:none; z-index:1;
     background:
       linear-gradient(120deg, rgba(255,255,255,.08), rgba(255,255,255,0) 30% 70%, rgba(0,0,0,.10));
     mix-blend-mode: soft-light;
-  }*/
-
+  }
 /* Titolo */
 .hero h1 {
   margin: 0 0 0.35em;
