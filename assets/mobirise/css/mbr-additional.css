@@ -1313,6 +1313,25 @@ a {
   --brand-red: #ff5a4d;
   --text-light: #ffffff;
   --overlay-dark: rgba(15, 15, 20, 0.55);
+  --overlay-rete: repeating-linear-gradient(
+    0deg,
+    rgba(210,210,210,.35) 0px,
+    rgba(210,210,210,.35) 1px,
+    rgba(0,0,0,0) 10px
+  ),
+  /* trama griglia (verticale) */
+  repeating-linear-gradient(
+    90deg,
+    rgba(210,210,210,.35) 0px,
+    rgba(210,210,210,.35) 1px,
+    rgba(0,0,0,0) 10px
+  ),
+  /* tinta rame/ottone molto leggera */
+  linear-gradient(135deg, rgba(190,120,60,.18), rgba(190,120,60,.10) 60%, rgba(255,255,255,.06));
+
+/* miscelazione per look metallico */
+mix-blend-mode: overlay;         /* prova anche 'soft-light' */
+};
 }
 
 /* ====== HERO ====== */
@@ -1350,7 +1369,7 @@ a {
   z-index: 1;
   max-width: 700px;
 
-    /* rete a maglia fine */
+    /* rete a maglia fine
     background:
       /* trama griglia (orizzontale) */
       repeating-linear-gradient(
@@ -1386,7 +1405,7 @@ a {
 
 /* Card morbida dietro al testo */
 .hero-card {
-  background: var(--overlay-dark);
+  background: var(--overlay-rete);
   border-radius: 16px;
   padding: clamp(18px, 3vw, 28px) clamp(20px, 3.5vw, 36px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
