@@ -1453,3 +1453,77 @@ a {
     margin: 0 auto;
   }
 }
+/* ===== CONTATTI ===== */
+/* ===== Variabili brand ===== */
+:root{
+  --brand-red:#ff5a4d;
+  --ink:#1d1d1f;
+  --paper:#f7f7f7;
+  --card:#ffffff;
+  --muted:#6b6b6b;
+  --ring:rgba(0,0,0,.08);
+}
+
+/* ===== Sezione Contatti (mobile-first, senza overlay) ===== */
+.section-contatti{
+  padding:48px 5% 72px;
+  background:var(--paper);
+  color:var(--ink);
+}
+.section-contatti .inner{ max-width:1100px; margin:0 auto; }
+
+.c-head{ text-align:center; max-width:780px; margin:0 auto 28px; }
+.c-head h2{ margin:0 0 .35em; font-weight:800; font-size:clamp(26px,6vw,40px); line-height:1.1; }
+.c-head p{ margin:0; color:var(--muted); font-size:clamp(15px,3.8vw,18px); }
+
+/* Grid: su mobile è una colonna, su desktop due */
+.c-grid{ display:grid; gap:24px; grid-template-columns:1fr; }
+@media (min-width:900px){
+  .c-grid{ gap:32px; grid-template-columns:1fr 1fr; }
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--ring);
+  border-radius:16px;
+  box-shadow:0 10px 22px rgba(0,0,0,.06);
+  padding:20px;
+}
+
+/* Info + CTA */
+.info-list{ display:grid; gap:16px; margin-bottom:18px; }
+.info-item h3{ margin:.2em 0 .2em; font-size:18px; font-weight:800; }
+.info-item p{ margin:0; color:var(--muted); font-size:16px; }
+.cta-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:8px; }
+
+.btn{
+  display:inline-block; padding:12px 16px; border-radius:12px; font-weight:700;
+  border:1px solid transparent; text-align:center; transition:.15s ease;
+}
+.btn-primary{ background:var(--brand-red); color:#fff; box-shadow:0 8px 18px rgba(255,90,77,.25); }
+.btn-primary:hover{ transform:translateY(-1px); box-shadow:0 12px 26px rgba(255,90,77,.35); }
+.btn-outline{ background:#fff; color:var(--ink); border-color:var(--ring); }
+.btn-outline:hover{ border-color:rgba(0,0,0,.18); }
+
+/* Mappa responsive */
+.map-wrap{ border-radius:12px; overflow:hidden; border:1px solid var(--ring); }
+.map-wrap iframe{ display:block; width:100%; height:260px; }
+@media (min-width:900px){ .map-wrap iframe{ height:360px; } }
+
+/* Form mobile-first */
+form{ display:grid; gap:14px; }
+form .row.two{ display:grid; gap:14px; grid-template-columns:1fr; }
+@media (min-width:700px){
+  form .row.two{ grid-template-columns:1fr 1fr; }
+}
+label{ display:grid; gap:6px; font-size:14px; font-weight:700; }
+input, textarea, select{
+  width:100%; padding:12px 14px; border-radius:12px;
+  border:1px solid var(--ring); background:#fff; color:var(--ink);
+  font-size:16px; outline:none;
+}
+textarea{ min-height:120px; resize:vertical; }
+input:focus, textarea:focus, select:focus{
+  border-color:rgba(0,0,0,.25); box-shadow:0 0 0 4px rgba(255,90,77,.12);
+}
+.form-help{ font-size:12px; color:var(--muted); margin:6px 0 0; }
