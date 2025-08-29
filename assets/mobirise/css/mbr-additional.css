@@ -1596,13 +1596,7 @@ a {
   position: absolute;
   inset: 0;
   pointer-events: none;
- background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.55) 0%,
-    rgba(0, 0, 0, 0.35) 40%,
-    rgba(0, 0, 0, 0.15) 100%
-  );
-}
+
 
 /* Contenuto */
 .hero-content {
@@ -1633,20 +1627,26 @@ a {
   /* rete a maglia fine */
   background:
     /* trama griglia (orizzontale) */
-    repeating-linear-gradient(0deg,
-      rgba(210, 210, 210, .35) 0px,
-      rgba(210, 210, 210, .35) 1px,
-      rgba(0, 0, 0, 0) 10px),
-    /* trama griglia (verticale) */
-    repeating-linear-gradient(90deg,
-      rgba(210, 210, 210, .35) 0px,
-      rgba(210, 210, 210, .35) 1px,
-      rgba(0, 0, 0, 0) 10px),
-    /* tinta rame/ottone molto leggera */
-    linear-gradient(135deg, rgba(190, 120, 60, .18), rgba(190, 120, 60, .10) 60%, rgba(255, 255, 255, .06));
+    linear-gradient(180deg,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0.4) 40%,
+      rgba(0, 0, 0, 0.1) 100%),
+  repeating-linear-gradient(0deg,
+    rgba(210, 210, 210, .35) 0px,
+    rgba(210, 210, 210, .35) 1px,
+    rgba(0, 0, 0, 0) 10px),
+  /* trama griglia (verticale) */
+  repeating-linear-gradient(90deg,
+    rgba(210, 210, 210, .35) 0px,
+    rgba(210, 210, 210, .35) 1px,
+    rgba(0, 0, 0, 0) 10px),
+  /* tinta rame/ottone molto leggera */
+  linear-gradient(135deg, rgba(190, 120, 60, .18), rgba(190, 120, 60, .10) 60%, rgba(255, 255, 255, .06));
   /* miscelazione per look metallico */
   mix-blend-mode: overlay;
-};
+}
+
+;
 }
 
 /* Titolo */
@@ -1699,12 +1699,6 @@ a {
     min-height: 70vh;
   }
 
-  .hero::before {
-    background: linear-gradient(180deg,
-        rgba(0, 0, 0, 0.65) 0%,
-        rgba(0, 0, 0, 0.4) 40%,
-        rgba(0, 0, 0, 0) 100%);
-  }
 
   .hero-content {
     margin: 0 auto;
