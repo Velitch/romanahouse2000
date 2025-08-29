@@ -1627,10 +1627,7 @@ a {
   /* rete a maglia fine */
   background:
     /* trama griglia (orizzontale) */
-    linear-gradient(180deg,
-      rgba(0, 0, 0, 0.65) 0%,
-      rgba(0, 0, 0, 0.4) 40%,
-      rgba(0, 0, 0, 0.1) 100%),
+
   repeating-linear-gradient(0deg,
     rgba(210, 210, 210, .35) 0px,
     rgba(210, 210, 210, .35) 1px,
