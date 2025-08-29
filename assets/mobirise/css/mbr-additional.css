@@ -1625,6 +1625,11 @@ a {
 
 /* Card morbida dietro al testo */
 .hero-card {
+  border-radius: 16px;
+  padding: clamp(18px, 3vw, 28px) clamp(20px, 3.5vw, 36px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   /* rete a maglia fine */
   background:
     /* trama griglia (orizzontale) */
@@ -1642,12 +1647,6 @@ a {
   /* miscelazione per look metallico */
   mix-blend-mode: overlay;
 };
-  /* prova anche 'soft-light' */
-border-radius: 16px;
-padding: clamp(18px, 3vw, 28px) clamp(20px, 3.5vw, 36px);
-box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
-backdrop-filter: blur(3px);
--webkit-backdrop-filter: blur(3px);
 }
 
 /* Titolo */
