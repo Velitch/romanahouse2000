@@ -1649,7 +1649,7 @@ a {
       linear-gradient(120deg, rgba(255,255,255,.08), rgba(255,255,255,0) 30% 70%, rgba(0,0,0,.10));
     mix-blend-mode: soft-light;
   }
-  
+
 /* Titolo */
 .hero h1 {
   margin: 0 0 0.35em;
@@ -1690,7 +1690,7 @@ a {
 
 .btn-primary:active {
   transform: translateY(0);
-  box-shadow: 0 5px 12px rgba(255, 90, 77, 0.32);
+  box-shadow: 0 5px 12px rgba(158, 201, 117, 0.32);
 }
 
 /* ====== RESPONSIVE ====== */
