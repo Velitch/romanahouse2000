@@ -1330,13 +1330,49 @@ a {
   color: var(--text-light);
 }
 
-/* Overlay per rendere leggibile il testo */
+/* Overlay zanzariera metallo rame/ottone */
+.hero::before{
+  content:"";
+  position:absolute; inset:0; pointer-events:none; z-index:1;
+
+  /* rete a maglia fine */
+  background:
+    /* trama griglia (orizzontale) */
+    repeating-linear-gradient(
+      0deg,
+      rgba(210,210,210,.35) 0px,
+      rgba(210,210,210,.35) 1px,
+      rgba(0,0,0,0) 10px
+    ),
+    /* trama griglia (verticale) */
+    repeating-linear-gradient(
+      90deg,
+      rgba(210,210,210,.35) 0px,
+      rgba(210,210,210,.35) 1px,
+      rgba(0,0,0,0) 10px
+    ),
+    /* tinta rame/ottone molto leggera */
+    linear-gradient(135deg, rgba(190,120,60,.18), rgba(190,120,60,.10) 60%, rgba(255,255,255,.06));
+
+  /* miscelazione per look metallico */
+  mix-blend-mode: overlay;         /* prova anche 'soft-light' */
+}
+
+/* riflesso diagonale delicato (opzionale) */
+.hero::after{
+  content:"";
+  position:absolute; inset:0; pointer-events:none; z-index:1;
+  background:
+    linear-gradient(120deg, rgba(255,255,255,.08), rgba(255,255,255,0) 30% 70%, rgba(0,0,0,.10));
+  mix-blend-mode: soft-light;
+}
+/* Overlay per rendere leggibile il testo
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
-/*  background: linear-gradient(
+   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 0.55) 0%,
     rgba(0, 0, 0, 0.35) 40%,
