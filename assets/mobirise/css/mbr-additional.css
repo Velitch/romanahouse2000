@@ -149,16 +149,16 @@ body {
 .btn-primary.focus,
 .btn-primary.active {
   color: #ffffff !important;
-  background-color: #d47511 !important;
-  border-color: #d47511 !important;
+  background-color: #9ecc76 !important;
+  border-color: #9ecc76 !important;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #ffffff !important;
-  background-color: #d47511 !important;
-  border-color: #d47511 !important;
+  background-color: #9ecc76 !important;
+  border-color: #9ecc76 !important;
 }
 
 .btn-secondary,
@@ -347,7 +347,7 @@ body {
 .btn-primary-outline:focus,
 .btn-primary-outline.focus,
 .btn-primary-outline.active {
-  color: #d47511 !important;
+  color: #9ecc76 !important;
   background-color: transparent !important;
   border-color: transparent !important;
   box-shadow: none !important;
